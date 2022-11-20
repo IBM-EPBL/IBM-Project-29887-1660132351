@@ -1,0 +1,14 @@
+       preds=np.argmax(model1.predict(x))
+        print(preds)
+        df=pd.read_excel('precautions - veg.xlsx')
+        print(df.iloc[preds][0])
+
+
+
+
+       preds=np.argmax(model1.predict(x))
+        print(preds)
+        df=pd.read_excel('precautions - fruits.xlsx')
+        print(df.iloc[preds][0])
+    return render_template("predict.html",y=df.iloc[preds][0])
+

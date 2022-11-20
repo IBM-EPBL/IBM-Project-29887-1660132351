@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="Viewport" content="width=device-width, initialscale=1.0">
+       <title> Plant Disease Prediction </title>
+       <link rel="stylesheet" href="/static/styles.css" type="text/css">
+   </head>
+   
+   
+   
+   <body>
+     <h1 id="head">Plant Disease Prediction</h1>
+      <div id="wrapper">
+        <ul>
+           <li> <a href="{{url_for('index')}}">Home</a></li>
+           <li> <a href="{{url_for('prediction')}}">Predict</a></li>
+       </ul>
+      </div>
+    <br>
+    <section class="image">
+     <h2>Detect the disease in the plant if it is infected</h2>
+     <br>
+     <div class="main">
+      <img src="/static/first.jpg" alt="Crops" title="Crops" >
+       <div class="text">
+        <p>Food losses due to crop infections from pathogens such as bacteria, viruses and fungi are persistent issues in agriculture for centuries across the globe. In order to minimize the disease induced damage in crops during growth, harvest and postharvest processing, as well as to maximize productivity and ensure agricultural sustainability, advanced disease detection and prevention in crops are imperative. </p>
+         <br>
+         <br>
+        <p>Hence we are introduced AI based disease prediction system. Here you can  detect if your plants are infected or not .If  it is infected you can able to get the solution here. To analyse go to the predict page.</p>
+      </div>
+     </div>
+     </section>
+  </body>
+</html>
